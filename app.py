@@ -4,9 +4,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 def main():
-    st.title("Peak Waiters and Energy App for Australia")
+    st.title("Peak Waiters and Energy App")
 
-    uploaded_file = st.file_uploader("Upload your .xlsx file")
+    uploaded_file = st.file_uploader("Upload your .xlsx file from CDM")
 
     if uploaded_file is not None:
         df = pd.read_excel(uploaded_file)
